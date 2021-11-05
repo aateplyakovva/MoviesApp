@@ -1,31 +1,33 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "../pages/Home";
-import Catalog from "../pages/Catalog";
-import Detail from "../pages/Detail";
+import React from 'react';
+
+import { Route, Switch } from 'react-router-dom';
+
+import Home from '../pages/Home';
+import Catalog from '../pages/Catalog';
+import Detail from '../pages/Detail';
 
 const Routes = () => {
     return (
         <Switch>
-            <Route 
-                path='/:category/sdearch/:keyword' 
+            <Route
+                path='/:category/search/:keyword'
                 component={Catalog}
             />
-             <Route 
-                path='/:category/:id' 
+            <Route
+                path='/:category/:id'
                 component={Detail}
             />
-             <Route 
-                path='/:category' 
+            <Route
+                path='/:category'
                 component={Catalog}
             />
-             <Route 
+            <Route
                 path='/'
                 exact
                 component={Home}
             />
         </Switch>
-    )
+    );
 }
 
-export default Routes
+export default Routes;
