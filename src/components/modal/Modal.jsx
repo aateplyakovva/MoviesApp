@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import './modal.scss';
 
+import CloseIcon from '@mui/icons-material/Close';
+
 const Modal = props => {
 
     const [active, setActive] = useState(false);
@@ -36,7 +38,7 @@ export const ModalContent = props => {
         <div ref={contentRef} className="modal__content">
             {props.children}
             <div className="modal__content__close" onClick={closeModal}>
-                icon
+                <CloseIcon />
             </div>
         </div>
     )

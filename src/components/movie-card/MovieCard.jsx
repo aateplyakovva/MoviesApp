@@ -8,6 +8,8 @@ import Button from '../button/Button';
 import { category } from '../../api/tmdbApi';
 import apiConfig from '../../api/apiConfig';
 
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+
 const MovieCard = props => {
     const item = props.item;
 
@@ -18,7 +20,7 @@ const MovieCard = props => {
         <Link to={link}>
             <div className="movie-card" style={{backgroundImage: `url(${bg})`}}>
                 <Button>
-                    play
+                <PlayArrowIcon fontSize="large"/>
                 </Button>
             </div>  
             <h3>{item.title || item.name}</h3>
