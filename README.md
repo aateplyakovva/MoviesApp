@@ -1,10 +1,9 @@
-# MOVIET 
- is Responsive react movies app made with API
-## :stuck_out_tongue_winking_eye: How to start??
-1. npm i
-2.npm start
+# :movie_camera: MOVIET :movie_camera:
+ `is responsive react movies app made with API`
+## :pencil: How to start??
+    1. npm i    
+    2. npm start
 
-## :sunglasses: This app made according to the tutorial
- [tutorial](https://youtu.be/ntYXj9W1Ez8)
+## :pray: This app made according to the [tutorial](https://youtu.be/ntYXj9W1Ez8)
 
 # :boom: Preview!
