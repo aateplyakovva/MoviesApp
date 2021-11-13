@@ -12,7 +12,7 @@ const Home = () => {
         <>
             <HeroSlide/>
             <div className="container">
-                <div className="section mb-3">
+                <div className="section">
                     <div className="section__header mb-2">
                         <h2>Trending Movies</h2>
                         <Link to="/movie">
@@ -22,8 +22,8 @@ const Home = () => {
                     <MovieList category={category.movie} type={movieType.popular}/>
                 </div>
 
-                <div className="section mb-3">
-                    <div className="section__header mb-2">
+                <div className="section">
+                    <div className="section__header">
                         <h2>Top Rated Movies</h2>
                         <Link to="/movie">
                             <OutlineButton className="small">View more</OutlineButton>
